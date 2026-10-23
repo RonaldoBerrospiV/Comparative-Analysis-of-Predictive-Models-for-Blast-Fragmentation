@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101b1b">
+    <meta name="description" content="Aula visual interactiva con datos ficticios para explorar ideas de análisis de patrones en un entorno subterráneo conceptual.">
+    <title>Aula de patrones — laboratorio conceptual</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Aula de patrones, inicio">
+        <span class="brand-mark" aria-hidden="true">AP</span>
+        <span>Aula de patrones<span class="brand-subtitle">Laboratorio conceptual</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a href="#explorar">Explorar</a>
+        <a href="#conceptos">Conceptos</a>
+        <a href="#holmberg-persson">Holmberg–Persson</a>
+        <a href="#limites">Acerca del aula</a>
+      </nav>
+      <span class="header-tag">EDICIÓN EDUCATIVA</span>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section-wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Entorno subterráneo imaginario</p>
+          <h1 id="hero-title">Leer patrones.<br><span>No diseñar operaciones.</span></h1>
+          <p class="hero-lede">Un espacio visual para conversar sobre datos y modelos. Recorre una malla abstracta y observa cómo distintas ideas pueden representar relaciones.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#explorar">Entrar al laboratorio <span aria-hidden="true">↘</span></a>
+            <span class="quiet-note">Sin escala · Sin datos de campo</span>
+          </div>
+          <div class="safety-banner">
+            <span class="safety-icon" aria-hidden="true">i</span>
+            <p><strong>Solo para aprendizaje.</strong> Los gráficos y ejemplos son ficticios; no describen una mina ni sirven para planificar una voladura.</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-topline"><span>MAPA DE IDEAS</span><span>FIG. 01 / SINTÉTICA</span></div>
+          <svg class="strata-art" viewBox="0 0 600 390" role="img" aria-labelledby="strata-title strata-desc">
+            <title id="strata-title">Ilustración conceptual de capas y una malla de nodos</title>
+            <desc id="strata-desc">Dibujo abstracto sin escala: líneas onduladas representan capas imaginarias y puntos decorativos forman una malla conceptual.</desc>
+            <defs>
+              <linearGradient id="rock-fill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#315451" stop-opacity=".62"/>
+                <stop offset="1" stop-color="#172a2b" stop-opacity=".08"/>
+              </linearGradient>
+              <pattern id="speckle" width="32" height="32" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="6" r="1" fill="#d2c69f" opacity=".35"/>
+                <circle cx="22" cy="24" r=".8" fill="#d2c69f" opacity=".24"/>
+              </pattern>
+            </defs>
+            <path d="M0 92 Q100 55 196 87 T394 79 T600 67 V390 H0Z" fill="url(#rock-fill)"/>
+            <path d="M0 92 Q100 55 196 87 T394 79 T600 67" class="strata-line"/>
+            <path d="M0 166 Q92 143 197 166 T398 158 T600 143" class="strata-line strata-line-soft"/>
+            <path d="M0 258 Q111 218 211 247 T414 239 T600 214" class="strata-line"/>
+            <path d="M0 320 Q108 289 216 316 T415 308 T600 288" class="strata-line strata-line-soft"/>
+            <path d="M0 0 H600 V390 H0Z" fill="url(#speckle)" opacity=".65"/>
+            <g class="art-grid">
+              <path d="M118 112 L235 100 L354 109 L477 91 M118 112 L110 192 L226 184 L235 100 M235 100 L226 184 L347 188 L354 109 M354 109 L347 188 L470 177 L477 91 M110 192 L105 273 L216 264 L226 184 M226 184 L216 264 L337 271 L347 188 M347 188 L337 271 L462 255 L470 177 M105 273 L216 264 L337 271 L462 255"/>
+              <circle cx="118" cy="112" r="5"/><circle cx="235" cy="100" r="5"/><circle cx="354" cy="109" r="5"/><circle cx="477" cy="91" r="5"/>
+              <circle cx="110" cy="192" r="5"/><circle cx="226" cy="184" r="5"/><circle cx="347" cy="188" r="5"/><circle cx="470" cy="177" r="5"/>
+              <circle cx="105" cy="273" r="5"/><circle cx="216" cy="264" r="5"/><circle cx="337" cy="271" r="5"/><circle cx="462" cy="255" r="5"/>
+            </g>
+            <g class="art-labels">
+              <text x="24" y="55">MALLA ILUSTRATIVA</text>
+              <text x="425" y="348">SIN ESCALA</text>
+            </g>
+          </svg>
+          <div class="art-footer"><span><i class="legend-dot"></i> Nodo conceptual</span><span>ENTORNO FICTICIO</span></div>
+        </div>
+      </section>
+
+      <section class="lab-section" id="explorar" aria-labelledby="lab-title">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / EXPLORACIÓN VISUAL</p>
+              <h2 id="lab-title">Una misma idea,<br><span>dos formas de verla.</span></h2>
+            </div>
+            <p class="section-intro">Cambia la lente para comparar dos esquemas de relaciones. Las figuras son ilustraciones fijas: no se ajustan a datos reales ni producen resultados.</p>
+          </div>
+
+          <div class="lab-card">
+            <div class="lab-toolbar">
+              <div class="toolbar-label"><span class="live-indicator"></span> PANEL DE EXPLORACIÓN</div>
+              <div class="view-switch" role="group" aria-label="Elegir esquema conceptual">
+                <button type="button" class="view-button is-selected" data-view="tendencia" aria-pressed="true">Tendencia</button>
+                <button type="button" class="view-button" data-view="relaciones" aria-pressed="false">Relaciones</button>
+              </div>
+            </div>
+            <div class="lab-body">
+              <div class="chart-area">
+                <div class="chart-caption"><span>MAPA ABSTRACTO DE PUNTOS</span><span>VALORES NO REPRESENTADOS</span></div>
+                <svg id="concept-chart" class="concept-chart view-tendencia" viewBox="0 0 760 340" role="img" aria-labelledby="chart-title chart-desc">
+                  <title id="chart-title">Diagrama sintético de puntos conceptuales</title>
+                  <desc id="chart-desc">Puntos decorativos sin escala ni valores físicos, con una guía de tendencia abstracta.</desc>
+                  <g class="chart-grid">
+                    <path d="M64 40 V290 H720 M64 228 H720 M64 166 H720 M64 104 H720 M195 40 V290 M326 40 V290 M457 40 V290 M588 40 V290"/>
+                  </g>
+                  <g class="trend-visual">
+                    <path d="M98 252 C220 222 318 205 408 163 S594 115 685 79" class="trend-path"/>
+                    <path d="M98 252 C220 222 318 205 408 163 S594 115 685 79" class="trend-halo"/>
+                  </g>
+                  <g class="relation-visual">
+                    <path d="M121 218 L225 132 L330 200 L430 92 L541 167 L650 75 M225 132 L430 92 M330 200 L541 167 M121 218 L330 200 M430 92 L650 75" class="relation-path"/>
+                  </g>
+                  <g class="chart-points">
+                    <circle cx="121" cy="218" r="7"/><circle cx="184" cy="184" r="6"/><circle cx="225" cy="132" r="7"/>
+                    <circle cx="279" cy="223" r="6"/><circle cx="330" cy="200" r="7"/><circle cx="378" cy="147" r="6"/>
+                    <circle cx="430" cy="92" r="7"/><circle cx="481" cy="210" r="6"/><circle cx="541" cy="167" r="7"/>
+                    <circle cx="590" cy="122" r="6"/><circle cx="650" cy="75" r="7"/><circle cx="680" cy="184" r="6"/>
+                  </g>
+                  <g class="chart-axis-labels">
+                    <text x="64" y="320">PATRÓN A</text><text x="636" y="320">PATRÓN B</text>
+                  </g>
+                </svg>
+                <div class="chart-legend"><span><i class="legend-dot"></i> Muestra simulada</span><span id="chart-legend-mode"><i class="legend-line"></i> Tendencia esquemática</span></div>
+              </div>
+              <aside class="insight-panel" aria-live="polite" aria-atomic="true">
+                <span class="insight-index" id="insight-index">LENTE 01</span>
+                <h3 id="insight-title">Tendencia</h3>
+                <p id="insight-copy">Una línea puede resumir un patrón general. En esta lámina es solo un trazo explicativo: no representa una relación medida.</p>
+                <div class="insight-divider"></div>
+                <p class="insight-note"><span aria-hidden="true">✳</span> No hay escala, unidades, predicciones ni parámetros de diseño.</p>
+              </aside>
+            </div>
+            <div class="lab-footnote"><span>DATOS DE EJEMPLO: FICTICIOS</span><span>ESQUEMA FIJO · NO ES UNA HERRAMIENTA DE CÁLCULO</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="concept-section section-wrap" id="conceptos" aria-labelledby="concept-title">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="eyebrow">02 / IDEAS PARA DISCUTIR</p>
+            <h2 id="concept-title">Modelos como <span>lentes.</span></h2>
+          </div>
+          <p class="section-intro">Cada familia de modelos ofrece una manera distinta de describir patrones. Aquí se presentan como conceptos generales, no como herramientas para una operación.</p>
+        </div>
+        <div class="concept-cards">
+          <article class="concept-card">
+            <span class="card-number">A</span>
+            <div class="card-icon icon-line" aria-hidden="true"><span></span></div>
+            <h3>Regresión</h3>
+            <p>Una forma de resumir asociaciones con una tendencia. En clase, permite conversar sobre supuestos y sobre qué información deja fuera una simplificación.</p>
+            <span class="card-tag">PATRÓN GENERAL</span>
+          </article>
+          <article class="concept-card">
+            <span class="card-number">B</span>
+            <div class="card-icon icon-network" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>Red neuronal</h3>
+            <p>Una familia de modelos que combina relaciones internas para representar patrones. Su complejidad no garantiza que una conclusión sea confiable.</p>
+            <span class="card-tag">PATRÓN COMPLEJO</span>
+          </article>
+          <article class="concept-card concept-card-note">
+            <span class="card-number">?</span>
+            <div class="card-icon icon-question" aria-hidden="true">?</div>
+            <h3>Pregunta antes de concluir</h3>
+            <p>¿De dónde vienen los datos? ¿Qué no sabemos? ¿La representación es comprensible y apropiada para el contexto?</p>
+            <span class="card-tag">LECTURA CRÍTICA</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="model-section" id="holmberg-persson" aria-labelledby="holmberg-title">
+        <div class="section-wrap model-inner">
+          <div class="model-heading">
+            <p class="eyebrow">03 / LECTURA DE UN MODELO</p>
+            <h2 id="holmberg-title">Holmberg–Persson:<br><span>un marco de estudio.</span></h2>
+            <p>El método Holmberg–Persson aparece en la literatura técnica como un modelo analítico relacionado con el estudio de fenómenos de voladura subterránea. En esta aula lo presentamos únicamente como ejemplo de cómo un modelo representa, de forma simplificada, un fenómeno complejo.</p>
+          </div>
+          <div class="model-details">
+            <article class="model-note">
+              <span class="model-note-label">PARA APRENDER</span>
+              <h3>Un modelo no es el terreno.</h3>
+              <p>Una representación matemática depende de supuestos y simplificaciones. Estudiarla ayuda a preguntar qué aspectos describe y cuáles quedan fuera, no a decidir cómo intervenir en un sitio real.</p>
+            </article>
+            <article class="model-note model-note-caution">
+              <span class="model-note-label">LÍMITE DE ESTA SECCIÓN</span>
+              <h3>Sin diseño ni cálculo.</h3>
+              <p>No se incluyen ecuaciones, parámetros, valores de entrada o salida, dimensiones, secuencias ni recomendaciones. Esta sección no permite dimensionar ni planificar una voladura.</p>
+            </article>
+            <p class="model-prompt"><span aria-hidden="true">↳</span> Pregunta para discutir: ¿qué evidencia y qué supuestos necesitaríamos revisar antes de confiar en cualquier modelo?</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="boundary-section" id="limites" aria-labelledby="boundary-title">
+        <div class="section-wrap boundary-inner">
+          <div>
+            <p class="eyebrow">04 / ALCANCE Y LÍMITES</p>
+            <h2 id="boundary-title">Un aula, no<br>un instrumento.</h2>
+          </div>
+          <div class="boundary-copy">
+            <p>Esta página enseña vocabulario visual para hablar de datos y modelos. No contiene datos de minas, mediciones físicas ni instrucciones operativas.</p>
+            <ul>
+              <li><span aria-hidden="true">—</span> Ejemplos generados para esta demostración.</li>
+              <li><span aria-hidden="true">—</span> Gráficos abstractos, sin escala ni dimensiones.</li>
+              <li><span aria-hidden="true">—</span> Sin cálculos, recomendaciones o resultados aplicables al campo.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">AP</span><span>Aula de patrones<span class="brand-subtitle">Laboratorio conceptual</span></span></a>
+      <p>Material educativo · Datos completamente ficticios</p>
+      <a class="back-top" href="#inicio">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>
